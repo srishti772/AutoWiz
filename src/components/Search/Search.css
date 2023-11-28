@@ -1,0 +1,152 @@
+
+
+.selection{
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    white-space: wrap;
+   
+}
+
+
+.clearAll{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+}
+
+.tag{
+    background-color: var(--primary);
+    margin: 0.1em;
+    display: inline;
+    padding: 0.4em;
+    border-radius: 2em;
+}
+
+.custom-select {
+    background-color:var(--primary);
+
+    border: 1px solid var(--primary); /* Change this to the desired border color */
+  }
+
+.container{
+text-align: left;
+line-height: 1.8em;
+
+}
+
+.checkboxList{
+    text-align: left;
+    height:6em;
+    min-height: auto;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width: 100%;
+}
+
+.pages .page-link {
+    color: black;
+  }
+  
+  .actionButton{
+    display: flex;
+    flex-direction: column;
+   margin-top: 1em;;
+    width: 2.0em;
+    height: 2.0em;
+    opacity: 0;
+    z-index: 3;
+    row-gap: 0.5em;
+    column-gap: 0.5em;
+    float: right;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  .wishlist, .edit,.del,.cancel,.save,.button-false,.button-true{
+    background-color: transparent !important;
+    border:none;
+   
+    color: grey;
+    z-index: 3;
+   
+  }
+  .custom-filter-btn
+  {
+  border-radius: 0;
+  border: none;
+  width: 100%;
+  background-color: var(--primary);
+  z-index: 0 !important;
+  color: black;
+  }
+
+  .wishlist:hover, .edit:hover,.del:hover, .cancel:hover,.save:hover{
+   
+    border-radius: 100%;
+    color: black !important;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+
+
+  .mb-3:hover .actionButton{
+    opacity: 1;
+  }
+
+
+  .pages .page-item.active .page-link {
+    background-color: var(--primary);
+    border-color: var(--secondary);
+  }
+
+.checkboxList .form-check-input {
+    background-color: var(--primary);
+    color: black;
+  }
+  
+  .checkboxList .form-check-input:checked {
+    background-color: var(--primary);
+  }
+
+  .checkboxList .form-check-input:checked {
+    background-color: grey;
+    border-color: grey;
+  }
+
+
+.menu-content{
+    display: block;
+    padding: 1em;
+    overflow-y: auto;
+    width: 100%;
+   
+
+}
+
+.sort{
+    width:25em;
+    text-align: left;
+    padding: 2em;
+}
+
+.SearchPage{
+    display:'inline-flex';
+    height:100%;   
+    flex-direction: column;
+    margin-top: 70px;
+    }
+
+.custom-navBar
+{
+     z-index:9002;
+      background-color:var(--primary);
+      width:100%;
+    }
+
+    @media (max-width:768px) {
+     
+          .SearchPage{
+            margin-top: 10px;
+            }
+        }
